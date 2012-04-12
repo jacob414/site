@@ -22,4 +22,4 @@ sh = lambda line: paver.easy.sh(expand(line))
 
 @task
 def deploy():
-    sh('rsync * arnet:public_html/')
+    sh('rsync -ar * arnet:public_html/')
