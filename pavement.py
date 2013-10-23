@@ -10,7 +10,7 @@ from plexical import shortcuts
 from plexical.px.util import script, check, subst
 
 settings = {
-    'REMOTE': 'arnet:~/public_html',
+    'REMOTE': 'wf:~/webapps/jacob414',
     'EXCLUDES': '--exclude=.* --exclude=*.py --exclude=\.#*'
 }
 
@@ -22,4 +22,4 @@ sh = lambda line: paver.easy.sh(expand(line))
 
 @task
 def deploy():
-    sh('rsync -ar * arnet:public_html/')
+    sh('rsync -ar * wf:~/webapps/jacob414')
