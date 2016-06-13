@@ -37,7 +37,7 @@ ul.quickies {
 }
 
 ul.quickies > li {
-  height: 30px;
+  margin-bottom: 8px;
 }
 
 ul.quickies > li > img {
