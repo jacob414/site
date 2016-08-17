@@ -22,15 +22,11 @@ h1#name-title {
 }
 
 #me {
-  position:absolute;
   background:#fff;
 }
 
 #summary {
-  vertical-align:bottom;
-  height:220px;
-  margin-left: 110px;
-  position: absolute;
+  margin-bottom: 1em;
 }
 
 div#center_box >div >div {
