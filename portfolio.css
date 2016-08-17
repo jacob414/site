@@ -4,6 +4,13 @@ body {
   background-color: #eee;
 }
 
+h1#summary {
+  text-align: center;
+  font-size: 14pt;
+  font-style: italic;
+  margin-top: 0;
+}
+
 div#top {
   background: #ddd;
   position: absolute;
@@ -22,5 +29,5 @@ div#top > span#summary {
 }
 
 img#juntoo-vignette {
-  max-width: 65%;
+  max-width: 97%;
 }
