@@ -4,6 +4,10 @@ body {
   background-color: #eee;
 }
 
+a#roc-0-c {
+  display:none;
+}
+
 h1#name-title {
   text-align: center;
   font-size: 14pt;
