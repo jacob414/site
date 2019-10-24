@@ -1,2 +1,10 @@
+SSH_ALIAS=jacob@cirrus:src/mine/site/
+
+.PHONY: download
+download:
+	rsync -ar $(SSH_ALIAS) ./
+
+.PHONY: live
 live:
-	rsync -ar * wf:~/webapps/jacob414
+	rsync -ar ./ $(SSH_ALIAS)
+
