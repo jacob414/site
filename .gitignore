@@ -3,3 +3,4 @@
 \.#*
 .Python
 .deploy
+build/html/.buildinfo

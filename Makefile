@@ -19,13 +19,14 @@ help:
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+	@rsync -ar build/html/ ./
 
 
 
-.PHONY: download
-download:
-	rsync -ar $(SSH_ALIAS) ./
+# .PHONY: download
+# download:
+# 	rsync -ar $(SSH_ALIAS) ./
 
 .PHONY: live
-live:
-	rsync -ar ./ $(SSH_ALIAS)
+live: html
+	git subtree push --prefix build/html github gh-pages
