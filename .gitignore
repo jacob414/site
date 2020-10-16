@@ -4,3 +4,4 @@
 .Python
 .deploy
 build/html/.buildinfo
+docs/.buildinfo
