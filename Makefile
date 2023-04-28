@@ -1,2 +1,2 @@
 live:
-	rsync -ar * wf:~/webapps/jacob414
+	rsync -ar * stratus:/var/www/html/414soft
